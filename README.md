@@ -4,8 +4,8 @@ Parabéns!
 
 Você alcançou a etapa de desafio técnico do processo seletivo Monuv e aqui estão os desafios:
 
-1. [AWS](https://github.com/monuvbr/desafio-devops/tree/main/aws)
-2. [Kubernetes](https://github.com/monuvbr/desafio-devops/tree/main/kubernetes)
+1. [AWS](https://github.com/monuvbr/desafio-devops/tree/master/aws)
+2. [Kubernetes](https://github.com/monuvbr/desafio-devops/tree/master/kubernetes)
 
 
 # Antes de começar
