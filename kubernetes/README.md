@@ -12,7 +12,7 @@ Dentro deste repositório existe um subdiretório `api` na pasta `kubernetes` qu
     - Configure um ingress que responda localmente para a aplicação na seguinte URL: http://api.monuvcloud.com
     - Os valores e a forma na qual as variáveis serão armazenadas fica a seu critério, mas lembre-se que estamos tratando informações sensíveis de credenciais.
     - O namespace dos manifestos deverá ser o `monuv`, não sendo necessário um manifesto para a criação do namespace.
-    - Garanta que que o pod utilize o máximo de 2GB de memória.
+    - Garanta que o pod utilize o máximo de 2GB de memória.
     - Armazene os seus manifestos dentro do diretório `kubernetes/` e também os prints da aplicação rodando em sua máquina.
 
 
