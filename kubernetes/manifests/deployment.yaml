@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monuv-api
+  namespace: monuv
+spec:
+  selector:
+    matchLabels:
+      app: monuv-api
+  template:
+    metadata:
+      labels:
+        app: monuv-api
+    spec:
+      containers:
+      - name: monuv-api
+        image: eriknayan/monuv-api:latest # Pull from my docker hub repo
+        resources:
+          limits:
+            memory: "2048Mi" # 2GB Limit by specs
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
+        env:
+        - name: ADMIN_USER
+          valueFrom:
+            secretKeyRef:
+              name: admin-user
+              key: admin-username
+        - name: ADMIN_PASS
+          valueFrom:
+            secretKeyRef:
+              name: admin-pass
+              key: admin-password

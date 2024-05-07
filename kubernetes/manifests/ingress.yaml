@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: monuv-ingress
+  namespace: monuv
+  labels:
+    name: monuv-ingress
+spec:
+  rules:
+  - host: api.monuvcloud.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: monuv-api-service
+            port: 
+              number: 80
