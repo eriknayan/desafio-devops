@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: monuv-api-service
   namespace: monuv
+  labels:
+    environment : "Production"
 spec:
   selector:
     app: monuv-api

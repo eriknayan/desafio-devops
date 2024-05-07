@@ -5,6 +5,7 @@ metadata:
   namespace: monuv
   labels:
     name: monuv-ingress
+    environment : "Production"
 spec:
   rules:
   - host: api.monuvcloud.com

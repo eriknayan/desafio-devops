@@ -17,7 +17,7 @@ Para habilitar o NGINX ingress, foi executado o seguinte comando:
 
 `minikube addons enable ingress`
 
-Para poder acessar localmente "api.monuvcloud.com", foi feito o mapeamento do host com o ip do minikube editando o arquivo `/etc/hosts` e adicionado o seguinte:
+Para poder acessar localmente "api.monuvcloud.com", foi feito o mapeamento do host com o ip do minikube editando o arquivo `/etc/hosts` e adicionado o seguinte conteúdo:
 
 `<ip_local_minikube> api.monuvcloud.com`
 

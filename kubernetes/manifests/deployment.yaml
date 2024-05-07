@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: monuv-api
   namespace: monuv
+  labels:
+    environment : "Production"
+    app: monuv-api
 spec:
   selector:
     matchLabels:
